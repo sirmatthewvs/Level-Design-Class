@@ -1,0 +1,29 @@
+{
+  "name": "com.gamekit.3dgamekitlite",
+  "version": "1.0.0",
+  "displayName": "3D Game Kit Lite",
+  "description": "A complete third-person character controller with platforming mechanics, enemies, collectibles, and interactive systems. Includes new Input System integration and Cinemachine camera support.",
+  "unity": "2022.3",
+  "unityRelease": "0f1",
+  "dependencies": {
+    "com.unity.cinemachine": "2.10.5",
+    "com.unity.inputsystem": "1.7.0",
+    "com.unity.postprocessing": "3.2.2",
+    "com.unity.render-pipelines.universal": "14.0.0",
+    "com.unity.timeline": "1.7.0",
+    "com.unity.ai.navigation": "1.1.0",
+    "com.unity.textmeshpro": "3.0.6"
+  },
+  "keywords": [
+    "character controller",
+    "platformer",
+    "third person",
+    "game kit",
+    "cinemachine",
+    "input system"
+  ],
+  "author": {
+    "name": "Unity Technologies (Modified)",
+    "url": "https://unity.com"
+  }
+}
