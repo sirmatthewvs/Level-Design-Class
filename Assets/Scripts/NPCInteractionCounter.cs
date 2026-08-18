@@ -41,6 +41,7 @@ public class NPCInteractionCounter : MonoBehaviour
         if(interactedNPCs >= 4)
         {
             audioSource.clip = victoryClip;
+            audioSource.Play();
         }
     }
 

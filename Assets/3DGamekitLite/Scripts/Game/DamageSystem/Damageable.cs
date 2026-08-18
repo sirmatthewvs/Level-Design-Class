@@ -35,12 +35,15 @@ namespace Gamekit3D
         protected float m_timeSinceLastHit = 0.0f;
         protected Collider m_Collider;
 
+        ParticleSystem parts;
+
         System.Action schedule;
 
         void Start()
         {
             ResetDamage();
             m_Collider = GetComponent<Collider>();
+            parts = GetComponent<ParticleSystem>();
         }
 
         void Update()
@@ -93,6 +96,7 @@ namespace Gamekit3D
             if (Vector3.Angle(forward, positionToDamager) > hitAngle * 0.5f)
                 return;
 
+            parts.Play();
             isInvulnerable = true;
             currentHitPoints -= data.amount;
 
