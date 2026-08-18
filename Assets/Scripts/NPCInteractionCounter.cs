@@ -7,7 +7,11 @@ public class NPCInteractionCounter : MonoBehaviour
 
     [SerializeField] private TMP_Text counterText;
 
-    private int interactedNPCs = 0;
+    public int interactedNPCs = 0;
+
+    [SerializeField] AudioSource audioSource;
+
+    [SerializeField] AudioClip victoryClip;
 
     private void Awake()
     {
@@ -33,6 +37,11 @@ public class NPCInteractionCounter : MonoBehaviour
         UpdateUI();
 
         Debug.Log("NPC interactuados: " + interactedNPCs);
+
+        if(interactedNPCs >= 4)
+        {
+            audioSource.clip = victoryClip;
+        }
     }
 
     private void UpdateUI()
