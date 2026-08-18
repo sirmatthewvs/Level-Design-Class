@@ -50,4 +50,4 @@ MonoBehaviour:
   - key: END
     value: The treasure is finally mine!
   - key: Test
-    value: I should try to open this door
+    value: "Deber\xEDa tratar de abrir esta puerta"
