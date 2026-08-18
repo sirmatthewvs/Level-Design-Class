@@ -5610,7 +5610,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &519640041
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8579,7 +8579,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: b3276a95822d59040a836e1aa216f38d, type: 2}
+  m_NavMeshData: {fileID: 0}
   m_BuildHeightMesh: 0
 --- !u!1001 &640304930
 PrefabInstance:
@@ -13644,6 +13644,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1764480372}
     m_Modifications:
+    - target: {fileID: 899103180424488667, guid: de44e2ee8a5279448acdc9996c280503, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -21.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 899103180424488667, guid: de44e2ee8a5279448acdc9996c280503, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.36
+      objectReference: {fileID: 0}
     - target: {fileID: 3001107565118740324, guid: de44e2ee8a5279448acdc9996c280503, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0
@@ -16586,6 +16594,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: TallWall (149)
       objectReference: {fileID: 0}
+    - target: {fileID: 5174436998071086634, guid: acef8d36730a0174bb475a2ed81afabe, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 5295622651481019847, guid: acef8d36730a0174bb475a2ed81afabe, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18081,7 +18097,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3753672744368782647, guid: a710be42235ab014a8543af44d198f8d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1777712568}
   m_SourcePrefab: {fileID: 100100000, guid: a710be42235ab014a8543af44d198f8d, type: 3}
 --- !u!1001 &1569837877
 PrefabInstance:
@@ -20266,6 +20285,55 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1939404388405013138, guid: 3bfc138a14f947d46a8476f971a493fe, type: 3}
   m_PrefabInstance: {fileID: 1768756568}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1777712566 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3753672744368782647, guid: a710be42235ab014a8543af44d198f8d, type: 3}
+  m_PrefabInstance: {fileID: 1566221327}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1777712568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1777712566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalCameraData
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
+  m_Version: 2
 --- !u!1001 &1796131360
 PrefabInstance:
   m_ObjectHideFlags: 0
